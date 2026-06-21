@@ -1,0 +1,604 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 3 0 R 5 0 R 7 0 R 9 0 R 11 0 R ] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1778 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+54 800 Td
+(URL Shortener Project Explanation) Tj
+T*
+() Tj
+T*
+(What This Project Does) Tj
+T*
+() Tj
+T*
+(This project is a Laravel and React based URL shortener.) Tj
+T*
+() Tj
+T*
+(The main purpose is simple:) Tj
+T*
+() Tj
+T*
+(1. A user enters a long URL.) Tj
+T*
+(2. The app generates a short random code.) Tj
+T*
+(3. The app creates a short link.) Tj
+T*
+(4. When someone opens the short link, the app redirects them to the original long URL.) Tj
+T*
+(5. The app records click analytics in the background.) Tj
+T*
+() Tj
+T*
+(Example:) Tj
+T*
+() Tj
+T*
+(Long URL:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://example.com/some/very/long/url/with/query/params) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Short URL:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://yourdomain.com/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(What To Say About The Project) Tj
+T*
+() Tj
+T*
+(This is a full-stack URL shortener application built with Laravel for the backend and React) Tj
+T*
+(for the frontend.) Tj
+T*
+() Tj
+T*
+(The user can paste a long URL, click the shorten button, and the system generates a short) Tj
+T*
+(8-character link. When that short link is opened, Laravel finds the original URL in the) Tj
+T*
+(database and redirects the user to it.) Tj
+T*
+() Tj
+T*
+(The project also tracks clicks using a queue-based system so that redirects stay fast even) Tj
+T*
+(when many users are clicking links.) Tj
+T*
+() Tj
+T*
+(Why Local Links Show 127.0.0.1 Or 8001) Tj
+T*
+() Tj
+T*
+(During development, the Laravel server runs locally on the computer.) Tj
+T*
+() Tj
+T*
+(That is why links may look like:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(http://127.0.0.1:8001/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Here:) Tj
+T*
+() Tj
+T*
+(- `127.0.0.1` means the local computer.) Tj
+T*
+(- `8001` is the local Laravel development server port.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 1349 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+54 800 Td
+(- `J7qudkrM` is the short code.) Tj
+T*
+() Tj
+T*
+(This is normal during local development.) Tj
+T*
+() Tj
+T*
+(What Happens After Hosting) Tj
+T*
+() Tj
+T*
+(After buying a domain and hosting the project publicly, the link will not show `127.0.0.1`) Tj
+T*
+(or `8001`.) Tj
+T*
+() Tj
+T*
+(It will look like:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://yourdomain.com/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(or with a short domain:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://lnksrt.in/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Public HTTPS websites use port `443`, and browsers hide that port automatically.) Tj
+T*
+() Tj
+T*
+(So users will only see the clean domain and short code.) Tj
+T*
+() Tj
+T*
+(Can The Domain Be Removed Completely?) Tj
+T*
+() Tj
+T*
+(No, a public URL cannot work without a domain.) Tj
+T*
+() Tj
+T*
+(This will not work properly:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(http://J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Because the browser will think `J7qudkrM` is the domain name.) Tj
+T*
+() Tj
+T*
+(A real short link must have:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://domain.com/code) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Example:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://lnksrt.in/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Will Local Links Work On Mobile?) Tj
+T*
+() Tj
+T*
+(A local link like this will not work on mobile:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1498 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+54 800 Td
+(http://127.0.0.1:8001/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Because on the phone, `127.0.0.1` means the phone itself, not the laptop.) Tj
+T*
+() Tj
+T*
+(For mobile testing on the same Wi-Fi, use the laptop's local IP address and run Laravel like) Tj
+T*
+(this:) Tj
+T*
+() Tj
+T*
+(```bash) Tj
+T*
+(php artisan serve --host=0.0.0.0 --port=8001) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Then the mobile link may look like:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(http://192.168.1.25:8001/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(For real public access from anywhere, the app must be hosted with a real domain.) Tj
+T*
+() Tj
+T*
+(Backend Flow) Tj
+T*
+() Tj
+T*
+(When a user creates a short link:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(React frontend) Tj
+T*
+(-> POST /api/urls) Tj
+T*
+(-> Laravel UrlController) Tj
+T*
+(-> ShortCodeGenerator creates 8-character code) Tj
+T*
+(-> Save original URL and short code in database) Tj
+T*
+(-> Return short URL to frontend) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(When someone opens a short link:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(Browser opens /J7qudkrM) Tj
+T*
+(-> Laravel RedirectController) Tj
+T*
+(-> Find short code in cache or database) Tj
+T*
+(-> Dispatch click tracking job) Tj
+T*
+(-> Redirect user to original URL) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Database Tables) Tj
+T*
+() Tj
+T*
+(The `urls` table stores:) Tj
+T*
+() Tj
+T*
+(- Original long URL) Tj
+T*
+(- Short code) Tj
+T*
+(- Click count) Tj
+T*
+(- Active or paused status) Tj
+T*
+(- Expiry date) Tj
+T*
+(- Last clicked time) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 1508 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+54 800 Td
+(The `clicks` table stores:) Tj
+T*
+() Tj
+T*
+(- URL ID) Tj
+T*
+(- Hashed IP) Tj
+T*
+(- Hashed user agent) Tj
+T*
+(- Referer) Tj
+T*
+(- Click timestamp) Tj
+T*
+() Tj
+T*
+(Why Queue Is Used) Tj
+T*
+() Tj
+T*
+(Click tracking is done using a queue.) Tj
+T*
+() Tj
+T*
+(This keeps redirects fast.) Tj
+T*
+() Tj
+T*
+(Instead of making the user wait while analytics are saved, the app redirects immediately and) Tj
+T*
+(records analytics in the background.) Tj
+T*
+() Tj
+T*
+(For local development, the project can use the database queue.) Tj
+T*
+() Tj
+T*
+(For production, Redis can be used for better performance.) Tj
+T*
+() Tj
+T*
+(Redis And Kafka) Tj
+T*
+() Tj
+T*
+(Redis is used for:) Tj
+T*
+() Tj
+T*
+(- Faster cache) Tj
+T*
+(- Faster queue processing) Tj
+T*
+(- Better performance when many users are clicking links) Tj
+T*
+() Tj
+T*
+(Kafka-style event publishing is included as a clean architecture layer.) Tj
+T*
+() Tj
+T*
+(Right now, click events are logged.) Tj
+T*
+() Tj
+T*
+(Later, a real Kafka producer can be connected if the project needs event streaming at large) Tj
+T*
+(scale.) Tj
+T*
+() Tj
+T*
+(Frontend) Tj
+T*
+() Tj
+T*
+(The frontend is built with React.) Tj
+T*
+() Tj
+T*
+(The main screen is simple:) Tj
+T*
+() Tj
+T*
+(1. Paste a long URL.) Tj
+T*
+(2. Click Shorten.) Tj
+T*
+(3. Copy the generated short link.) Tj
+T*
+(4. View recent shortened links.) Tj
+T*
+() Tj
+T*
+(Important Commands) Tj
+T*
+() Tj
+T*
+(Run Laravel server:) Tj
+T*
+() Tj
+T*
+(```bash) Tj
+T*
+(php artisan serve --port=8001) Tj
+T*
+(```) Tj
+T*
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Courier >> >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 982 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+54 800 Td
+() Tj
+T*
+(Run queue worker:) Tj
+T*
+() Tj
+T*
+(```bash) Tj
+T*
+(php artisan queue:work --queue=clicks,default) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Run migrations:) Tj
+T*
+() Tj
+T*
+(```bash) Tj
+T*
+(php artisan migrate) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Run tests:) Tj
+T*
+() Tj
+T*
+(```bash) Tj
+T*
+(php artisan test) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Build frontend:) Tj
+T*
+() Tj
+T*
+(```bash) Tj
+T*
+(npm run build) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+(Final Summary) Tj
+T*
+() Tj
+T*
+(This project is a working full-stack URL shortener.) Tj
+T*
+() Tj
+T*
+(It can generate short links, redirect users, record click analytics, and support production) Tj
+T*
+(scaling concepts like caching, queues, Redis, and Kafka-style events.) Tj
+T*
+() Tj
+T*
+(During local development, links show `127.0.0.1` or a local port like `8001`.) Tj
+T*
+() Tj
+T*
+(After hosting with a real domain, the links will look clean:) Tj
+T*
+() Tj
+T*
+(```txt) Tj
+T*
+(https://yourdomain.com/J7qudkrM) Tj
+T*
+(```) Tj
+T*
+() Tj
+T*
+ET
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000142 00000 n 
+0000000315 00000 n 
+0000002145 00000 n 
+0000002318 00000 n 
+0000003719 00000 n 
+0000003892 00000 n 
+0000005442 00000 n 
+0000005616 00000 n 
+0000007177 00000 n 
+0000007352 00000 n 
+trailer
+<< /Size 13 /Root 1 0 R >>
+startxref
+8386
+%%EOF
